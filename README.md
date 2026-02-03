@@ -26,4 +26,4 @@ Please use this GitHub repository's [Issue tracker](https://github.com/manojniwa
 
 ## Acknowledgements
 
-This ontology repository was created using the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit).
+This ontology repository was created using the [Ontology Development Kit (ODK)](https://github.com/INCATools/ontology-development-kit). 
