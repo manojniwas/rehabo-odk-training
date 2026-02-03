@@ -1,0 +1,40 @@
+id: rehabo-train
+title: "The Rehabilitation Ontology (Training)"
+description: "Training/simulation ontology for rehab cueing and skill training workflows."
+github_org: manojniwas
+repo: rehabo-odk-training
+git_main_branch: main
+license: https://creativecommons.org/public-domain/cc0/
+edit_format: owl
+
+# Export formats for release
+export_formats:
+  - owl   # Web Ontology Language
+  - obo   # OBO flat file format
+  - json  # JSON-LD export
+
+# What release products to generate
+release_artefacts:
+  - base
+  - full
+primary_release: full
+
+# Import configuration
+import_group:
+  products:
+    - id: ro
+      # Relation Ontology (RO)
+      # Provides standard relations like:
+      # part of, has participant, occurs in, etc.
+      mirror_from: http://purl.obolibrary.org/obo/ro/core.owl
+
+# Java memory for ROBOT
+robot_java_args: "-Xmx6G"
+
+# Quality control report settings
+robot_report:
+  use_labels: TRUE
+  fail_on: ERROR
+  custom_profile: TRUE
+  report_on:
+    - edit

@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/rehabo-train
+
+idspace: REHABO-TRAIN
+base_url: /obo/rehabo-train
+
+products:
+- rehabo-train.owl: https://raw.githubusercontent.com/manojniwas/rehabo-odk-training/main/rehabo-train.owl
+- rehabo-train.obo: https://raw.githubusercontent.com/manojniwas/rehabo-odk-training/main/rehabo-train.obo
+
+term_browser: ontobee
+example_terms:
+- REHABO-TRAIN_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/manojniwas/rehabo-odk-training/v
+
+- prefix: /tracker/
+  replacement: https://github.com/manojniwas/rehabo-odk-training/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/REHABO-TRAIN?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/manojniwas/rehabo-odk-training/main/
+
